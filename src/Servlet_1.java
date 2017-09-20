@@ -32,6 +32,7 @@ public class Servlet_1 extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
+
 		// Set response content type
 		response.setContentType("text/html");
 
@@ -39,13 +40,19 @@ public class Servlet_1 extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		out.println("<h1>" + message + "</h1>");
 		try {
-			
+
 		} catch (Exception e) {
-			
+
 		}
 		response.getWriter().append("Full Name: ").append(request.getParameter("full_name"));
 		response.getWriter().append("<br>");
 		response.getWriter().append("Email: ").append(request.getParameter("email"));
+	}
+
+	// Method to handle POST method request.
+	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+		doGet(request, response);
 	}
 
 	/**
