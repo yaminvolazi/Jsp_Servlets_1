@@ -22,7 +22,7 @@ public class Servlet_1 extends HttpServlet {
 	 */
 	public void init() throws ServletException {
 		// TODO Auto-generated method stub
-		message = "Hello World";
+		message = "Hello My Lady";
 	}
 
 	/**
@@ -37,6 +37,7 @@ public class Servlet_1 extends HttpServlet {
 
 		// Actual logic goes here.
 		PrintWriter out = response.getWriter();
+		out.println("<h1>" + message + "</h1>");
 		try {
 			
 		} catch (Exception e) {
