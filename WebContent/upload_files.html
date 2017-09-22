@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>File Upload</title>
+<link rel="stylesheet" href="resources/css/style.css">
+</head>
+<body>
+
+<div class="container">
+      <h3>File Upload:</h3>
+      <form action = "UploadServlet" method = "post" enctype = "multipart/form-data">
+      	 <label for="file">Select a file to upload:</label>
+         <input type = "file" name = "file" id="file" size = "50" />
+         <br/><br/>
+         <input type = "submit" value = "Upload File" />
+      </form>
+   </body>
+</html>
