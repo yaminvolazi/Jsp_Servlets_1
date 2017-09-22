@@ -25,4 +25,12 @@
     <servlet-name>SessionTrack</servlet-name>
     <url-pattern>/SessionTrack</url-pattern>
   </servlet-mapping>
+    <servlet>
+    <servlet-name>DatabaseAccess</servlet-name>
+    <servlet-class>DatabaseAccess</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DatabaseAccess</servlet-name>
+    <url-pattern>/DatabaseAccess</url-pattern>
+  </servlet-mapping>
 </web-app>
